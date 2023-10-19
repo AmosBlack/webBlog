@@ -13,7 +13,7 @@ body{
 }
 
 ::selection{
-    background: #1b1b1b;
+    background: #968f8f;
     color: #fff;
 }
 
@@ -27,7 +27,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
-    background: #fff;
+    background: #0f0f0f;
     z-index: 9;
 }
 
@@ -40,7 +40,7 @@ body{
     padding: 10px;
     margin-left: 10px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     text-transform: capitalize;
 }
 
@@ -48,7 +48,7 @@ body{
     margin-top: 60px;
     width: 100%;
     height: calc(100vh - 60px);
-    background: url(../img/jinwoo.jpg);
+    background: url(../img/jinwoo.png);
     background-position: center center;
     background-size: cover;
     display:flex;
@@ -95,6 +95,11 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
+    background-color: #1b1b1b;
+}
+
+.blogs-section *{
+    color: white;
 }
 
 .blog-image{
@@ -103,6 +108,7 @@ body{
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .blog-overview{
@@ -111,6 +117,11 @@ body{
 }
 
 .btn.dark{
-    background: #1b1b1b;
+    background: rgba(0,0,0,0.5);
     color: #fff;
 }
+
+.logo{
+    height: 100%;
+}
+

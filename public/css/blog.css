@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Bree+Serif&family=Frank+Ruhl+Libre&family=Roboto+Condensed:ital,wght@1,300&family=Rubik&family=Rubik+Mono+One&family=Ubuntu&display=swap');
+
+body{
+    background-color: #1b1b1b;
+}
+
 .blog, .article{
     position: relative;
     height: fit-content;
     padding-bottom: 0;
+    color: #c4c2c2;
 }
 
 .article, .title{
@@ -16,7 +23,7 @@
     padding: 0 10px;
     text-transform: capitalize;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(192, 189, 189, 0.5);
 }
 
 .published span{
@@ -24,12 +31,17 @@
     font-style: normal;
 }
 
-.article *{
-    margin: 30px 0;
-    color: #2d2d2d;
+.title{
+    color: #c4c2c2;
+    font-family: 'Bree Serif';
 }
 
-.article-image{
+.article *{
+    margin: 30px 0;
+    color: #c4c2c2;
+}
+
+.article img{
     max-width: 100%;
     max-height: 400px;
     display: block;
@@ -39,8 +51,22 @@
 
 .sub-heading{
     padding: 0 5vw;
-    color: #2d2d2d;
+    color: #c9c3c3;
     font-weight: 500;
     font-size: 40px;
     margin-top: 80px;
+}
+
+.article h2{
+    font-family: 'Bitter';
+    font-size: 1.5em;
+    font-weight: 1800;
+    font-style: italic;
+}
+
+.subtitle{
+    font-family: 'Bitter';
+    font-style: italic;
+    font-size: 1.8em;
+    margin-bottom: 5px;
 }

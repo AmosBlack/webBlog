@@ -1,4 +1,5 @@
 const blogTitleField = document.querySelector(".title")
+const blogSubTitleField = document.querySelector(".subtitle")
 const articleField = document.querySelector(".article")
 
 //banner
@@ -14,7 +15,7 @@ bannerImage.addEventListener("change", ()=>{
 })
 
 uploadInput.addEventListener("change", ()=>{
-    uploadImage(uploadInput, "image")
+    uploadImage(uploadInput, "image") 
 });
 
 const uploadImage = (uploadFile, uploadType) => {
@@ -56,14 +57,14 @@ publishBtn.addEventListener("click", () => {
         for(let i = 0; i < 4; i++){
             id += letters[Math.floor(Math.random() * letters.length)];
         }
-
-        // setting up docNaame
+        // setting up docNaame  
         let docName = `${blogTitle}-${id}`;
         let date = new Date(); // for blog metadata
         //access firestore with db 
         db.collection("blogs").doc(docName).set({
             title: blogTitleField.value,
-            article:articleField.value,
+            subtitle: blogSubTitleField.value,
+            article: articleField.value,
             bannerImage: bannerPath,
             publishedAt: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
         })
