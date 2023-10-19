@@ -32,7 +32,7 @@ const uploadImage = (uploadFile, uploadType) => {
             if(uploadType == "image"){
                 addImage(data, file.name);
             } else{
-                bannerPath = `${location.origin}/${data}`;
+                bannerPath = `https://web-blog-orcin.vercel.app//${data}`;
                 banner.style.backgroundImage = `url("${bannerPath}")`;
             }
         })
