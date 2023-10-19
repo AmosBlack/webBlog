@@ -48,7 +48,7 @@ body{
     margin-top: 60px;
     width: 100%;
     height: calc(100vh - 60px);
-    background: url('gs://amoswebblog.appspot.com/jinwoo.png');
+    background: url('../img/jinwoo.png');
     background-position: center center;
     background-size: cover;
     display:flex;
