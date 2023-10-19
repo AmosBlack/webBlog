@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body{
@@ -42,6 +43,10 @@ body{
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
+}
+
+.link:hover{
+    color: #968f8f;
 }
 
 .header{
@@ -111,6 +116,12 @@ body{
     color: #fff;
 }
 
+.blog-image:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    overflow: hidden;
+}   
+
 .blog-overview{
     margin: 10px 0 20px;
     line-height: 30px;
@@ -121,7 +132,15 @@ body{
     color: #fff;
 }
 
+.btn:hover{
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+}
+
 .logo{
     height: 100%;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
