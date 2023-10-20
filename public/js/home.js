@@ -11,10 +11,11 @@ db.collection("blogs").get().then((blogs)=>{
 const createBlog = (blog) => {
     let data = blog.data();
     blogSection.innerHTML += ` 
-    <div class="blog-card">
-    <img src="${data.bannerImage}" class="blog-image" alt="">
-    <h1 class="blog-title">${data.title}</h1>
-    <p class="blog-overview">${data.subtitle}</p>
-    <a href="/${blog.id}" class="btn dark">read</a>
-</div>`;
+        <div class="blog-card">
+            <img src="${data.bannerImage}" class="blog-image" alt="">
+            <h1 class="blog-title">${data.title}</h1>
+            <p class="blog-date">${data.publishedAt}</p>
+            <p class="blog-overview">${data.subtitle}</p>
+            <a href="/${blog.id}" class="btn dark">read</a>
+        </div>`;
 }

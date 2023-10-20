@@ -23,16 +23,16 @@ const uploadImage = (uploadFile, uploadType) => {
     if(file && file.type.includes("image")){
         const formdata = new FormData();
         formdata.append("image", file);
-
+            
         fetch('/upload', {
-            method: "POST",
+            method: "POST", 
             body: formdata
         }).then(res => res.json())
         .then(data => {
             if(uploadType == "image"){
                 addImage(data, file.name);
             } else{
-                bannerPath = `https://web-blog-orcin.vercel.app//${data}`;
+                bannerPath = `${location.origin}/${data}`;
                 banner.style.backgroundImage = `url("${bannerPath}")`;
             }
         })

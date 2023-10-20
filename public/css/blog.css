@@ -11,6 +11,10 @@ body{
     color: #c4c2c2;
 }
 
+.article{
+    font-family: "Frank Ruhl Libre";
+}
+
 .article, .title{
     min-height: auto;
     height: fit-content;
